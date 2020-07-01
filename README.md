@@ -1,6 +1,8 @@
 # Flask-BookStore
  Implement API principles in a Bookstore application
 
+## API Reference
+
 ### Getting Started
 - Base URL: At present this app can only be run locally and is not hosted as a base URL. The backend app is hosted at the default, `http://127.0.0.1:5000/`, which is set as a proxy in the frontend configuration. 
 - Authentication: This version of the application does not require authentication or API keys. 
@@ -19,6 +21,8 @@ The API will return four error types when requests fail:
 - 404: Resource Not Found
 - 405: Method Not Found
 - 422: Not Processable 
+
+### Endpoints
 
 #### GET /books
 - General:

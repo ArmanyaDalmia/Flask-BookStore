@@ -32,7 +32,7 @@ The API will return four error types when requests fail:
 
 ### Endpoints
 
---
+---
 
 #### GET /books
 - General:
@@ -95,6 +95,7 @@ The API will return four error types when requests fail:
 "total_books": 18
 }
 ```
+---
 
 #### POST /books
 - General:
@@ -115,6 +116,8 @@ The API will return four error types when requests fail:
   "total_books": 17
 }
 ```
+---
+
 #### DELETE /books/{book_id}
 - General:
     - Deletes the book of the given ID if it exists. Returns the id of the deleted book, success value, total books, and book list based on current page number to update the frontend. 
@@ -170,6 +173,8 @@ The API will return four error types when requests fail:
   "total_books": 15
 }
 ```
+---
+
 #### PATCH /books/{book_id}
 - General:
     - If provided, updates the rating of the specified book. Returns the success value and id of the modified book. 

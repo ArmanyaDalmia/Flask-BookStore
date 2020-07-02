@@ -231,6 +231,7 @@ The API will return four error types when requests fail:
   "id": 15,
   "success": true
 }
+```
 
 ----
 

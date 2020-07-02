@@ -233,6 +233,7 @@ The API will return four error types when requests fail:
   "success": true
 }
 ```
+---
 
 ## Authors
 

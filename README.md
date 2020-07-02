@@ -1,7 +1,54 @@
-# Flask-BookStore
- Implement API principles in a Bookstore application
+# Flask BookShelf
+
+----
+
+This project is a virtual bookshelf for Udacity students. Students are able to add their books to the bookshelf, give them a rating, update the rating and search through their book lists. As a part of the Fullstack Nanodegree, it serves as a practice module for lessons from Course 2: API Development and Documentation. By completing this project, students learn and apply their skills structuring and implementing well formatted API endpoints that leverage knowledge of HTTP and API development best practices.
+
+All backend code follows PEP8 style guidelines.
 
 *****
+
+## Getting Started
+
+----
+
+### Pre-requisites and Local Development 
+Developers using this project should already have Python3, pip and node installed on their local machines.
+
+----
+
+#### Backend
+
+From the backend folder run `pip install requirements.txt`. All required packages are included in the requirements file. 
+
+To run the application run the following commands: 
+```
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+flask run
+```
+
+These commands put the application in development and directs our application to use the `__init__.py` file in our flaskr folder. Working in development mode shows an interactive debugger in the console and restarts the server whenever changes are made. If running locally on Windows, look for the commands in the [Flask documentation](http://flask.pocoo.org/docs/1.0/tutorial/factory/).
+
+The application is run on `http://127.0.0.1:5000/` by default and is a proxy in the frontend configuration. 
+
+----
+
+### Tests
+In order to run tests navigate to the backend folder and run the following commands: 
+
+```
+dropdb bookshelf_test
+createdb bookshelf_test
+psql bookshelf_test < books.psql
+python test_flaskr.py
+```
+
+The first time you run the tests, omit the dropdb command. 
+
+All tests are kept in that file and should be maintained as updates are made to app functionality. 
+
+----
 
 ## API Reference
 
@@ -184,3 +231,15 @@ The API will return four error types when requests fail:
   "id": 15,
   "success": true
 }
+
+----
+
+## Authors
+
+I wrote everything based off of the samples provided by Udacity
+
+----
+
+## Acknowledgements
+
+The Udacity Full Stack Nanodegree Instructor and Course developers

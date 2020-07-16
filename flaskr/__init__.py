@@ -153,11 +153,11 @@ def create_app(test_config=None):
         }), 400
 
     @app.errorhandler(405)
-    def bad_request(error):
+    def not_found(error):
         return jsonify({
             "success": False, 
             "error": 405,
             "message": "method not found"
-        }), 400
+        }), 405
   
     return app
